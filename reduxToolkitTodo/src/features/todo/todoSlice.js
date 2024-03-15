@@ -12,7 +12,7 @@ export const todoSlice = createSlice({
 
     name:'todo',
     initialState,
-    reducres:{
+    reducers:{
         // addTodo is the property
         // as we use data , setData in useState like wise we have state and action here  state give us the current value access and action gives value that are required to perform action
         addTodo : (state , action)=>{

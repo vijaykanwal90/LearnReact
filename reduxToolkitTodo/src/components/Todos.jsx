@@ -1,7 +1,12 @@
 import React from 'react'
-import { UseSelector } from 'react-redux'
+import {  useDispatch, useSelector } from 'react-redux'
+import {removeTodo} from '../features/todo/todoSlice'
+// import todo from './AddTodo.jsx'
 function Todos(){
-  
+  // selector for getting value from store
+const todos =   useSelector(state =>state.todos)
+const dispatch = useDispatch()
+
   return (
     <>
     <div>Todos</div>
@@ -38,4 +43,4 @@ function Todos(){
   )
 }
 
-export default Todo
+export default Todos
