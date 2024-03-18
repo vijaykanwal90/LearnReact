@@ -1,11 +1,12 @@
 import React from 'react'
 import {  useDispatch, useSelector } from 'react-redux'
-import {removeTodo} from '../features/todo/todoSlice'
+import { removeTodo } from '../features/todo/todoSlice'
 // import todo from './AddTodo.jsx'
+// import AddTodo from './AddTodo'
 function Todos(){
   // selector for getting value from store
 const todos =   useSelector(state =>state.todos)
-const dispatch = useDispatch()
+// const dispatch = useDispatch()
 
   return (
     <>
@@ -28,7 +29,7 @@ const dispatch = useDispatch()
                 strokeWidth={1.5}
                 stroke="currentColor"
                 className="w-6 h-6"
-              >
+              > 
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
