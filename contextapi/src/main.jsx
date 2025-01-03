@@ -3,11 +3,15 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { CounterProvider } from './context/Counter.jsx'
 import App from './App.jsx'
+import { UserProvider } from './context/User.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <CounterProvider >
-    <App />
+      <UserProvider>
+      <App />
+
+      </UserProvider>
 
     </CounterProvider>
   </StrictMode>,
